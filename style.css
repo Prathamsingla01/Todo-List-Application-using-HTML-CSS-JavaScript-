@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.todo-container {
+  background-color: #fff;
+  padding: 20px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+}
+
+.input-section {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#todoInput {
+  flex: 1;
+  padding: 8px;
+}
+
+#addBtn {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+li span {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+}
+
+@media (max-width: 400px) {
+  .todo-container {
+    width: 90%;
+  }
+}
